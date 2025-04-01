@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todolist Sulis</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="head-section max-w-6xl mx-auto py-10">
+      <h1 class="heading text-center font-bold text-4xl md:text-5xl">Todolist Tyo</h1>
+    </section>
+
+    <section class="input-section max-w-6xl mx-auto my-4 mx-4 flex flex-row gap-x-4 justify-center">
+      <input id="inputNote" type="text" class="bg-grey-300 border border-grey-100 rounded-xl py-2 px-4 w-2/3" placeholder="Input here..." />
+      <button id="sendNote" class="py-2 px-6 bg-green-300 rounded-xl">Send</button>
+    </section>
+
+    <section id="output-section" class="max-w-6xl mx-auto my-4 mx-4 flex flex-row gap-x-4 justify-center">
+      <div class="my-4 mx-4 flex flex-row gap-x-4 justify-center">
+        <ul id="notes" class=""></ul>
+      </div>
+    </section>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
